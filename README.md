@@ -16,6 +16,6 @@ Ask :
 
 2. 2 lifecycle, yaitu :
 a. Plan : merencanakan algoritma, logic ataupun bahasa pemrograman dalam membuat program
-b. Code	: menuliskan kode2 algoritman, bahasa pemrograman yang sudah di rencanakan
+b. Code	: menuliskan kode2 algoritma, bahasa pemrograman yang sudah di rencanakan
 
 3. Installasi Ubuntu
