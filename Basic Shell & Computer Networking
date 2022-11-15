@@ -1,0 +1,16 @@
+Dumbways DO B14 - Muhammad Nandah Kurniawan
+Date : Tuesday, 15th November 2022
+
+Task : Linux Shell & Computer Networking
+
+1. Perbedaan antara IP private & public
+2. Perbedaan antara IP dinamis & statis
+3. Deploy aplikasi web server apache menggunakan apt package
+
+Screenshot untuk hasil web server ya
+Semua dijalankan di Virtual Machine yang sudah dibuat
+
+Ask :
+1. Perbedaan antara IP private adalah IP pribadi yang dimiliki oleh handphone, laptop dan tv yang terhubung dengan jaringan lokal, sedangkan IP public adalah IP yang digunakan router utk berkomunikasi dengan jaringan yang lebih luas dan IP ini didapatkan dari penyedia layanan internet atau ISP
+2. Perbedaan antara IP dinamis adalah IP dinamis IP otomatis dalam sebuah jaringan yang bersifat publik atau private dan dapat berubah-ubah dalam setiap waktu sedangkan IP statis adalah IP yang tidak dapat berubah-ubah dan perlu untuk setting manual jika hendak menggunakannya 
+3. 
