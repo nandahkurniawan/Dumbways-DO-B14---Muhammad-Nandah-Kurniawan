@@ -16,7 +16,8 @@ Repository
 https://github.com/dumbwaysdev/wayshub-frontend (nama kalian)
 
 Ask :
-1.
+1. monolithic, memiliki struktur yang mana semua aplikasi/database di dalam 1 server, jika scaling (duplikat server) arahnya vertikal
+sedangkan microservices, setiap aplikasi/fitur punya databases sendiri, dibelakang itu masing-masing databases dari setiap fitur terhubung ke mereka/utama, scalingnya bisa ke segala arah (fleksibel)
 2.
 3.
 4.
