@@ -17,4 +17,7 @@ Ask :
 3.
 4.
 
-Challenge
+Challenge :
+1. git diff = lists down conflicts. In order to view conflicts against the base file, use
+2. git log = is used to see the repository’s history by listing certain commit’s details
+3. git stash = command will temporarily save the changes that are not ready to be committed. That way, you can go back to that project later on.
