@@ -1,0 +1,19 @@
+Task : CI/CD with Cloudflare Pages
+
+1. Definisikan CI/CD sesuai dengan bahasa kalian
+2. Fork repository Dumbflix
+3. Deploy melalui Cloudflare Pages
+
+Challenge
+Deploy 2 branch yang berbeda
+
+Repo Dumbflix
+https://github.com/dumbwaysdev/dumbflix-frontend
+
+-------------------------------------------------
+
+1. Definisikan CI/CD sesuai dengan bahasa kalian
+CI/CD atau Continuous Integration dan Continuous Deployment merupakan suatu konsep otomasi yang dapat membantu pekerjaan programmer untuk melakukan pengecekan secara looping terhadap terhadap code secara terus menerus hingga aplikasi dapat release ke publik dengan otomatis.
+
+Continuous integration merupakan proses otomatis untuk memastikan semua code sudah berjalan dengan baik, jika terjadi error maka proses tersebut akan diulangi dari awal hingga code tersebut sudah tidak ada error dan siap lanjut ke tahap production.
+Continuous deployment merupakan proses otomatis agar aplikasi yang telah siap di kirim ke server hingga aplikasi dapat diakses secara public.
