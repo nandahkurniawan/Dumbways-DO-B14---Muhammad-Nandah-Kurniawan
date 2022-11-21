@@ -17,3 +17,9 @@ CI/CD atau Continuous Integration dan Continuous Deployment merupakan suatu kons
 
 Continuous integration merupakan proses otomatis untuk memastikan semua code sudah berjalan dengan baik, jika terjadi error maka proses tersebut akan diulangi dari awal hingga code tersebut sudah tidak ada error dan siap lanjut ke tahap production.
 Continuous deployment merupakan proses otomatis agar aplikasi yang telah siap di kirim ke server hingga aplikasi dapat diakses secara public.
+
+2. Fork repository Dumbflix.pdf
+3. Deploy melalui Cloudflare Pages.pdf
+
+Challenge
+Deploy 2 branch berbeda : Deploy melalui Cloudflare Pages.pdf
