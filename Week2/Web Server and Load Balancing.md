@@ -23,27 +23,8 @@ multipass shell VM2
 ![2022-11-25 08 42 22](https://user-images.githubusercontent.com/108359083/203883716-de9bb55e-ea72-44bf-85bc-016dd39b51a8.png)
 
 
-3.
-VM1, digunakan untuk menjalankan nginx
-- nginx
-Langkah pertama yaitu install engine nginx dengan
-sudo apt install nginx -y
-
-lalu enable nginx
-sudo systemctl enable nginx
-
-lalu start nginx
-sudo systemctl start nginx
-
-lalu cek status nginx
-sudo systemctl status nginx
-![2022-11-25 08 33 19](https://user-images.githubusercontent.com/108359083/203882997-9fec4ac2-3f9c-4903-8121-978000a9fbc9.png)
-
-lalu kita cek ip 10.0.2.15 melalui terminal , dan ini hasilnya, sudah berhasil terhubung
-![2022-11-25 08 53 29](https://user-images.githubusercontent.com/108359083/203885107-8dce65da-1dc2-48f5-ad15-8a2bfd34223f.png)
-
-VM 2, digunakan untuk menjalankan dumbflix-fronted menggunakan PM2
-- appserver ( dumbflix frontend ) dengan menggunakan pm2
+3. Menjalankan aplikasi dumbflix-frontend dengan gunakan PM2 (VM 2)
+- appserver ( dumbflix frontend ) 
 Langkah pertama yaitu, terlebih dahulu kita update dan upgrade server, dengan memberikan "-y" maka proses update dan upgrade akan menskip pertanyaan yes or no dengan otomatis langsung mengexecute yes
 sudo apt update -y; sudo apt upgrade -y
 ![2022-11-25 06 49 08](https://user-images.githubusercontent.com/108359083/203879511-653cb3eb-3b7a-4737-8482-44bb3c0a3295.png)
@@ -100,12 +81,45 @@ lalu kita cek ip 10.0.2.15:3000 melalui terminal , dan ini hasilnya, sudah berha
 ![2022-11-25 09 00 32](https://user-images.githubusercontent.com/108359083/203885523-30f62b88-beef-48fd-b146-c75d9134683a.png)
 
 
-4. VM2 :
-  - jalankan nginx 
-  - buat konfigurasi reverse proxy
+4. VM1 : jalankan nginx
+- nginx
+Langkah pertama yaitu install engine nginx dengan
+sudo apt install nginx -y
+
+lalu enable nginx
+sudo systemctl enable nginx
+
+lalu start nginx
+sudo systemctl start nginx
+
+lalu cek status nginx
+sudo systemctl status nginx
+![2022-11-25 08 33 19](https://user-images.githubusercontent.com/108359083/203882997-9fec4ac2-3f9c-4903-8121-978000a9fbc9.png)
+
+lalu kita cek ip 10.0.2.15 melalui terminal , dan ini hasilnya, sudah berhasil terhubung
+![2022-11-25 08 53 29](https://user-images.githubusercontent.com/108359083/203885107-8dce65da-1dc2-48f5-ad15-8a2bfd34223f.png)
+
+- buat konfigurasi reverse proxy
+
+![2022-11-25 09 25 53](https://user-images.githubusercontent.com/108359083/203915641-fafba9d1-9951-4062-92a3-ec60ebe4edfa.png)
+
+![2022-11-25 09 26 39](https://user-images.githubusercontent.com/108359083/203915657-dbe83e32-02cc-4d1d-8770-12336fe2f8ed.png)
+
+![2022-11-25 09 27 54A](https://user-images.githubusercontent.com/108359083/203915851-3309bc19-ccb2-476a-baf6-19e875d9253e.png)
+
+
+![2022-11-25 09 27 54](https://user-images.githubusercontent.com/108359083/203915677-147327e2-ac4c-4c61-aa66-9d1a99ae110a.png)
+
+![2022-11-25 09 28 49](https://user-images.githubusercontent.com/108359083/203915875-fcc3d1fe-1a14-4ec1-b450-a37c13a9a38f.png)
+
+
+
+- buat konfigurasi load balance antara VM1 dan VM2
+
 
 5. Mengakses domain dengan nama sendiri
-
+![2022-11-25 09 50 53](https://user-images.githubusercontent.com/108359083/203915220-dd83064f-67cb-4bfe-9c6e-38cc69aad3ae.png)
 
 Challenge
 1. Load Balancer berjalan dengan baik
+
